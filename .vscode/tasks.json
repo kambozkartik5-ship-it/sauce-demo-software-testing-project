@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Maven: Run All Tests (TestNG Suite)",
+      "type": "shell",
+      "command": "mvn clean test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Maven: Run Login Tests",
+      "type": "shell",
+      "command": "mvn test -Dtest=LoginTest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Maven: Run Products & Sorting Tests",
+      "type": "shell",
+      "command": "mvn test -Dtest=ProductsTest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Maven: Run Cart Tests",
+      "type": "shell",
+      "command": "mvn test -Dtest=CartTest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Maven: Run Checkout Tests",
+      "type": "shell",
+      "command": "mvn test -Dtest=CheckoutTest",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
